@@ -19,7 +19,11 @@
             laudantium placeat quidem sint quam omnis quos aperiam optio magni voluptas sunt, vitae rem inventore alias!
         </p>
         <h2 class="text-center">Vagas abertas</h2>
-        <p>Aqui será retornado vagas sobre a linguagem python</p>
+        <p>
+            {% for job in jobs %}
+                {% include 'includes/jobs_itens.html' %}
+            {% endfor %}
+        </p>
 
         <div class="text-center">
             <button class="btn btn-primary btn-lg">Entrar em Contato</button>
